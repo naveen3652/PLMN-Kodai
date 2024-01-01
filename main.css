@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Lora', serif;
+}
+header{
+    display: block;
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    background-color: #4F6F52;
+}
+.nav-bar > li{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: aliceblue;
+    color: #4F6F52;
+}
+.nav-bar{
+    margin: 0;
+}
+.nav-bar > li,a{
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    list-style: none;
+    margin:1vw 2vw 1vw 2vw;
+}
+
+h1{
+    color: #4F6F52;
+    text-align: center;
+    margin: 5vw;
+    font-size: 2.5rem;
+}
+.title > p{
+    color: #4F6F52;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: aliceblue;
+}
+.sigthseeing li{
+    list-style: none;
+}
+.box h2{
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.box{
+    display: block;
+    width: 100%;
+    padding: 2vw;
+    background-color: #4F6F52;
+    border-radius: 3vw;
+    margin: 3vw;
+    
+}
+.box img[class='pic']{
+    margin-top: 2vw;
+    margin-right: 2vw;
+    align-self: center;
+    border-radius: 2vw;
+}
+.box p,li{
+    font-size: 1.5rem;
+}
+.call{
+    float: right;
+    border: 1px solid white;
+    padding: 1vw;
+    border-radius: 1vw;
+    color: #4F6F52;
+    background-color: aliceblue;
+}
+@media (max-width:770px){
+    nav{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        background-color: #4F6F52;
+    }
+    .nav-bar > li{
+        border: 1px solid black;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+    .nav-bar{
+        margin: 0;
+    }
+    .nav-bar > li,a{
+        font-size: 0.7rem;
+        color:black;
+        text-decoration: none;
+        display: inline-block;
+        list-style-type: none;
+        list-style: none;
+        margin:0.8vw 1vw 0.8vw 1vw;
+    }
+}
+@media (min-width:900px){
+    .box{
+        display: inline-block;
+        width: 60%;
+        padding: 2vw;
+        background-color: #4F6F52;
+        border-radius: 3vw;
+        margin: 3vw;
+    }
+    main{
+        margin-left: 150px;
+    }
+}
+footer{
+    font-size: 0.8em;
+    color: aliceblue;
+    border-color: black;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+    padding: 10px;
+    background-color: #4F6F52;
+}
+.nav-bar > li > a:hover{
+    color: aliceblue;
+    background-color: #4F6F52;
+    font-weight: bolder;
+    opacity: 0.7;
+}
